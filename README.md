@@ -60,3 +60,4 @@ DNS heartbeats
 * It makes regular DNS heartbeats which can be signatured
 * It leaves artifacts in /tmp
 * It writes logs to stderr
+* Linux-only as it relies on /proc/self/exe
