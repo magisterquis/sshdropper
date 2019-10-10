@@ -30,6 +30,7 @@ added by removing the last line (`const payload = "#!/bin/sh\ndate > /tmp/t"`)
 and appending a binary encoded as a string.  A perl snippet is included in the
 source to make this a bit easier.  It should be used something like
 ```sh
+ed sshdropper.go
 4394
 $
 const payload = "#!/bin/sh\ndate > /tmp/t"
@@ -37,6 +38,7 @@ d
 wq
 4351
 $ perl -E '$"="\\x";$/=\16;say q{const payload = "" +};say qq{\t"\\x@{[unpack"(H2)*"]}` +}for(<>);say qq{\t""}' <./payload >>sshdropper.go
+```
 
 The downside to appending several hundred thousand lines of code is that some
 editors tend to not do well with really long files.
