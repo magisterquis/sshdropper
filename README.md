@@ -7,6 +7,7 @@ Features:
 * Compile-time configuration
 * Attacks 10.0.0.0/8
 * Heartbeat messages via DNS queries
+* Drops and runs a payload
 
 This was written to showcase go for a talk entitled "Malware in Go" at BSidesDC
 2019.  While it would probably work in some real environments, it is probably
