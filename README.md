@@ -9,9 +9,9 @@ Features:
 * Heartbeat messages via DNS queries
 * Drops and runs a payload
 
-This was written to showcase go for a talk entitled "Malware in Go" at BSidesDC
-2019.  While it would probably work in some real environments, it is probably
-not the worm you're looking for.  Move along.
+This was written to showcase go for a talk entitled "Hands-On Writing Malware
+in Go" at BSidesDC2019.  While it would probably work in some real
+environments, it is probably not the worm you're looking for.  Move along.
 
 Configuration
 -------------
